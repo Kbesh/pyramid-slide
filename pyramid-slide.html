@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+      #pyramid {
+          line-height: 0;
+          font-size: 30px;
+      }
+
+      body {
+          font-family: "Courier New", monospace;
+          text-align: center;
+      }
+
+      .invalid-field {
+          border: 1px solid red;
+      }
+
+      .error-message {
+          color: red;
+      }
+  </style>
+</head>
+
+<body>
+
+<p>This example demonstrates how to dynamically update a slider value with oninput.</p>
+
+<input type="range" min="1" max="20" oninput="getSlider(this.value)">
+<p id="pyramid-slide"></p>
+
+<select id="symbol">
+  <option>#</option>
+  <option>@</option>
+  <option>$</option>
+</select>
+
+<div id="pyramid"></div>
+
+<script src="pyramid-slide.js">
+
+</script>
+
+</body>
+</html>
